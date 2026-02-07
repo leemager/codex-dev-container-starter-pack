@@ -7,6 +7,31 @@ This folder is a **safe training wheels setup** for running **OpenAI Codex in VS
 The goal is to keep Codex’s actions **inside this project folder**, not across your whole device.
 
 ---
+## Get this starter pack (clone or download)
+
+Note: you can also just link ChatGPT/Claude to this repo URL and ask it something ilke "Can you give me a similar dev container starter pack but based on X and Y and for use in (Claude Code/Open Code etc)?".
+
+Two easy options:
+
+### Option A: Download a ZIP (easiest)
+
+1) On the GitHub page for this project, click the green **Code** button
+2) Click **Download ZIP**
+3) Unzip it somewhere you can find again (like `Desktop/` or `Documents/`)
+4) In VS Code: **File -> Open Folder...** and select the unzipped folder
+
+### Option B: Clone with Git (a little more advanced)
+
+1) Install Git (search: "Git for Windows" or "Install Git on Mac")
+2) In a terminal, run:
+
+   ```bash
+   git clone <PASTE_THIS_REPO_URL_HERE>
+   ```
+
+3) Open the cloned folder in VS Code
+
+---
 ## What you get
 
 - A ready-to-open **VS Code Dev Container** (`.devcontainer/`)
