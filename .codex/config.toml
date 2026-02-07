@@ -1,0 +1,15 @@
+# Codex config for this starter pack
+# See: https://developers.openai.com/codex/config-basic/
+
+# Keep Codex constrained to the current project folder
+sandbox_mode = "workspace-write"
+
+# For a smooth demo (no constant prompts). The *sandbox* is the real guardrail here.
+approval_policy = "never"
+
+# Default: keep network off in the sandbox (flip to true if you really need it)
+sandbox_workspace_write.network_access = false
+
+# Keep the environment "boring" and predictable when Codex runs commands
+[shell_environment_policy]
+include_only = ["PATH", "HOME"]

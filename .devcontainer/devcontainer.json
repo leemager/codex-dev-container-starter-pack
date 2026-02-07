@@ -1,0 +1,25 @@
+{
+  "name": "Codex Sandbox Starter Pack",
+  "build": { "dockerfile": "Dockerfile" },
+
+  "remoteUser": "codex",
+  "containerUser": "codex",
+
+  "runArgs": [
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--pids-limit=512"
+  ],
+
+  "postCreateCommand": "mkdir -p ~/.codex && (test -f ~/.codex/config.toml || cp .codex/config.toml ~/.codex/config.toml)",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "ms-python.python",
+        "openai.chatgpt"
+      ]
+    }
+  }
+}
